@@ -145,12 +145,7 @@ body{
 
    /* responsive */
    @media only screen and (max-width: 760px){
-    .container::before{
-        /* width: 100rem;
-        height: 100rem;
-        background-size: cover;
-        background-position: center; */
-    }
+    
 
     .container-1{
         width: 100%;
