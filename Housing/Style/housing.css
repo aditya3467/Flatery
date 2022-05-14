@@ -1,0 +1,20 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* **************footer********************** */
+.footer{
+    background-color: #423b44;
+    background: url("../res/footer.svg") no-repeat center center/cover;
+    color: white;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+
+}
+
+.footer div{
+    width: 15rem;
+}

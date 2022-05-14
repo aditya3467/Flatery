@@ -79,6 +79,7 @@ body{
     font-size: 1.2rem;
 }
 .redirect button{
+    cursor: pointer;
     margin-inline: 10px;
 }
 /* From uiverse.io by @alexmaracinaru */
