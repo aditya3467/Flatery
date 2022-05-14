@@ -14,7 +14,7 @@ body{
         height: 100%;
         width: 100%;
         /* opacity: 0.75; */
-        filter: brightness(40%);
+        filter: brightness(60%);
         object-fit: cover;
         /* background-attachment: fixed; */
         /* background-position: center; */
@@ -26,12 +26,14 @@ body{
 }
 
 .container-1{
-    background: rgba(243, 213, 95, 0.981);
+    background: rgba(215, 192, 96, 0.981);
+    /* background-color: #795F80; */
     display: flex;
     flex: 1;
     /* max-width: 60%; */
     flex-direction: column;
     color: #023c4d;
+    /* color: white; */
     align-items: center;
     justify-content: center;
     /* border: 2px solid red; */
