@@ -148,7 +148,7 @@ html{
 
 /*--------------------------------------------------------------
 	10. Social
---------------------------------------------------------------*/
+/* --------------------------------------------------------------*/
 .basr-social-share {
   /* position:fixed; */
 
@@ -321,18 +321,7 @@ html{
     width: 30px;
     height: 30px;
   }
-  .basr-social-share{
-    left: 0;
-    display: flex;
-    flex-direction: column;
-     position:fixed;
-    top:3em;
-    right:0;
-   
-    text-align:center;
-    padding:0 auto;
-    margin:5em auto;
-}
+ 
 }
 .social ul li a:after {
   content: '';
@@ -360,17 +349,7 @@ html{
     width: 30px;
     height: 30px;
   }
-  .basr-social-share{
-    left: 0;
-    display: block;
-     position:fixed;
-    top:3em;
-    right:0;
-   
-    text-align:center;
-    padding:0 auto;
-    margin:5em auto;
-}
+  
 }
 .social ul li a:hover:before {
   opacity: 1;
@@ -416,17 +395,7 @@ html{
   .social ul li a i {
     font-size: 16px;
   }
-  .basr-social-share{
-    left: 0;
-    display: block;
-     position:fixed;
-    top:3em;
-    right:0;
-   
-    text-align:center;
-    padding:0 auto;
-    margin:5em auto;
-}
+  
 }
 .social ul li a i.fa-envelope {
   font-size: 14px;
@@ -452,7 +421,8 @@ html{
 }
 .basr-social-share.social li a span {
   display: none;
-}
+} 
+
 
 .copyright{
   margin-top: -5rem;
