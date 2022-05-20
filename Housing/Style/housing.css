@@ -14,7 +14,10 @@ html{
 }
 
 .tut-head{
+  background:#272727;
   display: flex;
+  color: white;
+  flex: 1 1 980px;
   flex-direction: column;
   width: 100%;
   height: 10rem;
@@ -25,7 +28,7 @@ html{
 }
 /* From uiverse.io by @alexroumi */
 .tut-btn{
-  margin: 2rem;
+  /* margin: 2rem; */
   padding: 15px 25px;
   border: unset;
   border-radius: 15px;
@@ -41,6 +44,8 @@ html{
   overflow: hidden;
   height: 3.5rem;
  }
+
+ 
  
  .tut-btn::before {
   content: "";
@@ -60,6 +65,15 @@ html{
  button:hover {
   color: #e8e8e8;
  }
+
+ .tut{
+   display: flex;
+   width: 100%;
+   justify-content: space-evenly;
+   flex-direction: row;
+   flex: 1 1 600px;
+   align-items: center;
+ }
  
  button:hover::before {
   width: 100%;
@@ -67,10 +81,11 @@ html{
 
 .tutorial{
   display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 20rem;
-  border: 2px solid red;
-  /* align-items: center; */
+  height: 30rem;
+  /* border: 2px solid red; */
+  align-items: center;
   justify-content: center;
 }
 .DIY{
@@ -88,10 +103,50 @@ html{
   border: 2px solid red;
 }
 
+.vdo{
+
+  width: 60%;
+
+}
+
+.video{
+  /* margin-top: 2rem; */
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+
+    
+  .tut{
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+  }
+
+  .tut-btn{
+    /* margin: 1rem; */
+  }
+
+  .tut-head{
+    height: 25rem;
+  }
+  .tutorial{
+    height: 20rem;
+  }
+
+  .video{
+    height: 215px;
+  }
+  
+
+
+
+}
+
 
 /* **************footer********************** */
 .footer-1{
-  min-width: 100%;
+  /* min-width: 100%; */
     width: 100%;
     background-color: #423b44;
     background: url("../res/footer.svg") no-repeat center center/cover;
@@ -104,6 +159,13 @@ html{
     height: 10rem;
     align-items: center;
 
+}
+
+@media only screen and (max-width: 600px){
+  .footer-1{
+    flex-direction: column;
+    height: 25rem;
+  }
 }
 
 .footer-1 div{
@@ -432,4 +494,15 @@ html{
   width: 100%;
 }
 
+
+
+
+@media only screen and (max-width: 760px){
+    
+
+  
+
+
+
+ }
 
