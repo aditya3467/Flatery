@@ -155,10 +155,19 @@ html{
     font-family: 'Karla', sans-serif;
     display: flex;
     flex-wrap:wrap;
-    justify-content:space-evenly;
-    height: 10rem;
+    justify-content:center;
+    height: 12rem;
     align-items: center;
 
+}
+.f1{
+  display: flex;
+  margin-left: -2rem;
+
+}
+.logo-footer{
+  margin-top: 2rem;
+  height: 8rem;
 }
 
 @media only screen and (max-width: 600px){
