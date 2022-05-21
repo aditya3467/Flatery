@@ -370,7 +370,7 @@ header ul li a:hover{
     font-family: 'Karla', sans-serif;
     display: flex;
     flex-wrap:wrap;
-    justify-content:center;
+    justify-content:space-around;
     height: 12rem;
     align-items: center;
 
@@ -388,7 +388,9 @@ header ul li a:hover{
 @media only screen and (max-width: 600px){
   .footer-1{
     flex-direction: column;
-    height: 25rem;
+    height: 35rem;
+    margin-top: 1rem;
+
   }
 }
 
@@ -722,7 +724,10 @@ header ul li a:hover{
 
 
 
-@media only screen and (max-width: 760px){
+@media only screen and (max-width: 480px){
+  .copyright{
+    margin-top: -1rem;
+  }
     
 
   
