@@ -6,6 +6,12 @@ body{
     margin: 0;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 
 
@@ -36,7 +42,7 @@ header .logo{
 header ul{
   position: relative;
   display: flex;
-  right: 10rem;
+  
 }
 header ul li{
   position: relative;
