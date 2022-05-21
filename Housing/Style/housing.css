@@ -424,7 +424,8 @@ header ul li a:hover{
   justify-content: center;
   
   color: #795F80;
-  margin:0 auto;
+  margin-top: 2rem;
+  margin:2rem auto auto auto;
   text-align:center;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -459,8 +460,8 @@ header ul li a:hover{
   border-radius: 50%;
   float: left;
   position: relative;
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   text-align: center;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
