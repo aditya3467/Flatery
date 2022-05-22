@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 body{
     padding: 0;
@@ -50,14 +51,16 @@ header ul li{
 }
 header ul li a{
   position: relative;
-  padding: 5px 10px;
+  padding: 5px 15px;
   color: #fff;
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
+  font-size: 18px;
 }
 header ul li a.active,
 header ul li a:hover{
+  border-radius: 8px;
   background: #205aff;
 }
 .toggle{
@@ -234,10 +237,10 @@ header ul li a:hover{
   height: 100%;
   position: absolute;
   top: 0;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
-  display: flex;
+  display: none;
 }
 
 .close{
@@ -245,16 +248,17 @@ header ul li a:hover{
 }
 
 
-.form-container h1 {
+.form-container > h1 {
+  
 	font-weight: bold;
 	margin: 0;
 }
 
-.form-container h2 {
+.form-container > h2 {
 	text-align: center;
 }
 
-.form-container p {
+.overlay-panel p {
 	font-size: 14px;
 	font-weight: 100;
 	line-height: 20px;
@@ -262,7 +266,7 @@ header ul li a:hover{
 	margin: 20px 0 30px;
 }
 
-.form-container span {
+.overlay-panel span {
 	font-size: 12px;
 }
 
@@ -300,6 +304,8 @@ button.ghost {
 }
 
 form {
+  font-family: 'Montserrat', sans-serif;
+
 	background-color: #FFFFFF;
 	display: flex;
 	align-items: center;
@@ -319,6 +325,8 @@ input {
 }
 
 .container {
+  font-family: 'Montserrat', sans-serif;
+
 	background-color: #fff;
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
@@ -331,6 +339,7 @@ input {
 }
 
 .form-container {
+	font-family: 'Montserrat', sans-serif;
 	position: absolute;
 	top: 0;
 	height: 100%;

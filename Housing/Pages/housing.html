@@ -28,7 +28,7 @@
         <li><a href="#portfolio" onclick="toggle()">Book A Property</a></li>
         <li><a href="#team" onclick="toggle()">Rent</a></li>
         <li><a href="#contact" onclick="toggle()">Contact</a></li>
-        <li><a href="" id="button" onclick="toggle()">Login/SignUp</a></li>
+        <li><a href="#" id="button" onclick="toggle()">Login/SignUp</a></li>
     </ul>
     <div class="toggle" onclick="toggle()"></div>
 </header>
@@ -115,7 +115,7 @@
                         <span>or use your email for registration</span>
                         <input type="text" placeholder="Name" />
                         <input type="email" placeholder="Email" />
-                        <input type="password" placeholder="Password" />
+                        <input type="password" placeholder="Password" autocomplete="on" />
                         <button>Sign Up</button>
                     </form>
                 </div>
@@ -129,7 +129,7 @@
                         </div>
                         <span>or use your account</span>
                         <input type="email" placeholder="Email" />
-                        <input type="password" placeholder="Password" />
+                        <input type="password" placeholder="Password" autocomplete="on"/>
                         <a href="#">Forgot your password?</a>
                         <button>Sign In</button>
                         <h3 class="close">close</h3>
@@ -157,33 +157,34 @@
         </div>
 
     </div>
+
     <script>
-      document.getElementById("button").addEventListener("click" , function()
-      {
-          document.querySelector(".popup").style.display = "flex";
+        document.getElementById("button").addEventListener("click" , function()
+        {
+            document.querySelector(".popup").style.display = "flex";
 
-      }
-      )
+        }
+        )
 
-      document.querySelector(".close").addEventListener("click", function(){
-          document.querySelector(".popup").style.display = "none";
-      })
+        document.querySelector(".close").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "none";
+        })
 
-  </script>
+    </script>
 
-  <script>
-      const signUpButton = document.getElementById('signUp');
+    <script>
+        const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
 
 signUpButton.addEventListener('click', () => {
-container.classList.add("right-panel-active");
+	container.classList.add("right-panel-active");
 });
 
 signInButton.addEventListener('click', () => {
-container.classList.remove("right-panel-active");
+	container.classList.remove("right-panel-active");
 });
-  </script>
+    </script>
 
 
 
