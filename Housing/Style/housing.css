@@ -235,7 +235,8 @@ header ul li a:hover{
   /* opacity: 20%; */
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
+  z-index: 100;
   top: 0;
   /* display: flex; */
   justify-content: center;
@@ -258,7 +259,19 @@ header ul li a:hover{
 	text-align: center;
 }
 
-.overlay-panel p {
+
+
+
+h1 {
+	font-weight: bold;
+	margin: 0;
+}
+
+h2 {
+	text-align: center;
+}
+
+p {
 	font-size: 14px;
 	font-weight: 100;
 	line-height: 20px;
@@ -266,7 +279,7 @@ header ul li a:hover{
 	margin: 20px 0 30px;
 }
 
-.overlay-panel span {
+span {
 	font-size: 12px;
 }
 
@@ -304,8 +317,6 @@ button.ghost {
 }
 
 form {
-  font-family: 'Montserrat', sans-serif;
-
 	background-color: #FFFFFF;
 	display: flex;
 	align-items: center;
@@ -318,15 +329,14 @@ form {
 
 input {
 	background-color: #eee;
-	border: none;
+	border:white 2px solid;
+	/* border-radius: 5px; */
 	padding: 12px 15px;
 	margin: 8px 0;
 	width: 100%;
 }
 
 .container {
-  font-family: 'Montserrat', sans-serif;
-
 	background-color: #fff;
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
@@ -339,7 +349,6 @@ input {
 }
 
 .form-container {
-	font-family: 'Montserrat', sans-serif;
 	position: absolute;
 	top: 0;
 	height: 100%;
@@ -465,6 +474,60 @@ input {
 }
 
 
+.input-control input{
+	background-color: #eee;
+	border:white 2px solid;
+	/* border-radius: 5px; */
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+
+}
+.input-control input:focus {
+    /* outline: 0; */
+}
+
+.input-control.success input {
+    border-color: #09c372;
+	border-radius: 5px;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+	border-radius: 5px;
+	
+}
+
+.input-control.error {
+    color: #ff3860;
+    font-size: 9px;
+    /* height: 13px; */
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer i {
+    color: red;
+}
+
+footer a {
+    color: #3c97bf;
+    text-decoration: none;
+}
 
 
 

@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script defer src="./val.js"></script>
 
 
 </head>
@@ -105,19 +106,33 @@
         <div class="popup-content">
             <div class="container" id="container">
                 <div class="form-container sign-up-container">
-                    <form action="#">
-                        <h1>Create Account</h1>
-                        <div class="social-container">
-                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                        <span>or use your email for registration</span>
-                        <input type="text" placeholder="Name" />
-                        <input type="email" placeholder="Email" />
-                        <input type="password" placeholder="Password" autocomplete="on" />
-                        <button>Sign Up</button>
-                    </form>
+                  <form action="#" id="form">
+                    <h1>Create Account</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your email for registration</span>
+                    <div class="input-control">
+                    <input id="username" type="text" placeholder="Name" />
+                    <div class="error"></div>
+                </div>
+                    <div class="input-control">
+
+                    <input id="email" type="text" placeholder="Email" />
+                    <div class="error"></div>
+                </div>
+                    <div class="input-control">
+                    <input id="mobile" type="text" placeholder="Mobile Number" />
+                    <div class="error"></div>
+                </div>
+                    <div class="input-control">
+                    <input id="password" type="password" placeholder="Password" autocomplete="on" />
+                    <div class="error"></div>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
                 </div>
                 <div class="form-container sign-in-container">
                     <form action="#">
