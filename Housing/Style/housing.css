@@ -253,6 +253,9 @@ header ul li a:hover{
   left: -10rem;
   z-index: 10000;
 }
+.close i{
+  background-color: white;
+}
 .close-signup{
   cursor: pointer;
   /* height: 5rem; */
