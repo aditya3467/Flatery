@@ -246,6 +246,19 @@ header ul li a:hover{
 
 .close{
   cursor: pointer;
+  /* height: 5rem; */
+  position: relative;
+  top: -24rem;
+  left: -10rem;
+  z-index: 10000;
+}
+.close-signup{
+  cursor: pointer;
+  /* height: 5rem; */
+  position: relative;
+  top: -26.5rem;
+  left: 10.4rem;
+  z-index: 10000;
 }
 
 
@@ -262,14 +275,7 @@ header ul li a:hover{
 
 
 
-h1 {
-	font-weight: bold;
-	margin: 0;
-}
 
-h2 {
-	text-align: center;
-}
 
 p {
 	font-size: 14px;

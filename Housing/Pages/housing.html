@@ -132,6 +132,7 @@
                     <div class="error"></div>
                     </div>
                     <button type="submit">Sign Up</button>
+                    <div class="close-signup"><i class="fa fa-window-close fa-3x" aria-hidden="true"></i> </div>
                 </form>
                 </div>
                 <div class="form-container sign-in-container">
@@ -147,7 +148,7 @@
                         <input type="password" placeholder="Password" autocomplete="on"/>
                         <a href="#">Forgot your password?</a>
                         <button>Sign In</button>
-                        <h3 class="close">close</h3>
+                        <div class="close"><i class="fa fa-window-close fa-3x" aria-hidden="true"></i> </div>
                     </form>
                     
                 </div>
@@ -182,6 +183,9 @@
         )
 
         document.querySelector(".close").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "none";
+        })
+        document.querySelector(".close-signup").addEventListener("click", function(){
             document.querySelector(".popup").style.display = "none";
         })
 
