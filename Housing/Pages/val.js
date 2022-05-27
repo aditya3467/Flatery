@@ -3,7 +3,8 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const mobile = document.getElementById('mobile');
-// const password2 = document.getElementById('password2');
+const password2 = document.getElementById('password2');
+const aadhar = document.getElementById('aadhar');
 
 form1.addEventListener('submit', e => {
     e.preventDefault();
@@ -56,10 +57,11 @@ const validateInputs = () => {
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
     // const mobValue = mobile.value.trim();
-    // const password2Value = password2.value.trim();
+    const password2Value = password2.value.trim();
+    const adhr = aadhar.value.trim();
 
     if(usernameValue === '') {
-        setError(username, 'Username is required');
+        setError(username, '');
     } else {
         setSuccess(username);
     }
@@ -97,12 +99,30 @@ const validateInputs = () => {
         setSuccess(password);
     }
 
-    // if(password2Value === '') {
-    //     setError(password2, 'Please confirm your password');
-    // } else if (password2Value !== passwordValue) {
-    //     setError(password2, "Passwords doesn't match");
-    // } else {
-    //     setSuccess(password2);
-    // }
+    if(password2Value === '') {
+        setError(password2, 'Please confirm your password');
+    } else if (password2Value !== passwordValue) {
+        setError(password2, "Passwords doesn't match");
+
+    }
+    else if (passwordValue.length < 8 ) {
+        setError(password, 'Password must be at least 8 character.')
+    }
+     else {
+        setSuccess(password2);
+    }
+
+    if(adhr===''){
+        setError(aadhar,'provide your AADHAR number');
+    }
+
+    else if(adhr.length<16){
+        setError(aadhar, ' INCORRECT')
+
+    }
+
+    else{
+        setSuccess(aadhar);
+    }
 
 };
