@@ -159,7 +159,7 @@ header{
     height: 15%;
 }
 .tabContainer .buttonContainer button{
-    width: 25%;
+    width: 20%;
     height: 100%;
     float: left;
     border: #eee;
@@ -177,7 +177,7 @@ header{
 .tabContainer .tabPanel{
     height: 85%;
     /* background-color: gray; */
-    color: white;
+    color: black    ;
     text-align: center;
     padding-top: 105px;
     box-sizing: border-box;
@@ -191,6 +191,9 @@ header{
     font-weight: bolder;
     color: black;
     font-size: 50px;
+}
+.selectbox{
+    margin-bottom: 2rem;
 }
 
 .selectbox select{
@@ -228,12 +231,29 @@ header{
     top: 23.3rem ;
     left: 39rem;
 }
+.selectbox .label2{
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    font: 600 12px arial;
+    font-size: 14px;
+    color: #750dd4;
+    top: 29rem ;
+    left: 40rem;
+}
 
 .selectbox i{
     color: #616161;
     font-size: 18px;
     position: absolute;
     top: 23.2rem;
+    right: 42rem;
+}
+.city i{
+    color: #616161;
+    font-size: 18px;
+    position: absolute;
+    top: 29rem;
     right: 42rem;
 }
 
