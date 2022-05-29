@@ -197,6 +197,7 @@ header{
 }
 
 .selectbox select{
+    background: transparent;
     width: 20%;
     padding: 16px 30px 16px 125px;
     border-radius: 50px;
@@ -246,6 +247,7 @@ header{
     color: #616161;
     font-size: 18px;
     position: absolute;
+    z-index: -10;
     top: 23.2rem;
     right: 42rem;
 }
@@ -254,9 +256,33 @@ header{
     font-size: 18px;
     position: absolute;
     top: 29rem;
-    right: 42rem;
+    right: 40.5rem;
 }
 
 .selectbox select:focus +i{
     color: #931dff;
+}
+
+.post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post button{
+   width: 30%;
+   height: 3.4rem;
+   background-color: #e76000;
+   outline: none;
+   border: none;
+   color: white;
+   cursor: pointer;
+   font-size: 18px;
+}
+.post button:hover{
+   background-color: white;
+   outline: none;
+   border: 2px solid #e76000;
+   color: black;
+   cursor: pointer;
+   font-size: 18px;
 }
