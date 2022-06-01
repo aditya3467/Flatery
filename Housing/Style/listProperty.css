@@ -1,0 +1,184 @@
+body{
+    padding: 0;
+    margin: 0;
+     font-family: 'Poppins', sans-serif;;
+    
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+html{
+  scroll-behavior:smooth;
+}
+
+
+/********************************* NAVBAR *********************************/
+
+
+.head1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2px auto;
+    position: relative;
+    height: 8rem;
+    /* margin-top: 2rem; */
+    top: 5rem;
+}
+
+.title{
+    font-family: sans-serif;
+    color: #dc2d5e;
+    text-align: center;
+}
+.tabContainer{
+    margin-top: 4rem;
+    width: 100%;
+    height: 350px;
+}
+.tabContainer .buttonContainer{
+    display: flex;
+    justify-content: center;
+    height: 15%;
+}
+.tabContainer .buttonContainer button{
+    border-radius: 0;
+    width: 20%;
+    height: 100%;
+    float: left;
+    border: #eee;
+    color: black;
+    font-weight: 100;
+    /* border-bottom: 4px solid red; */
+    outline:none;
+    cursor: pointer;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: #eee;
+}
+.tabContainer .buttonContainer button:hover{
+    background-color: #d7d4d4;
+}
+.tabContainer .tabPanel{
+    height: 85%;
+    /* background-color: gray; */
+    color: black    ;
+    text-align: center;
+    padding-top: 105px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 22px;
+    display: none;
+}
+
+.border{
+    border-bottom: 4px solid #26b082 !important;
+    font-weight: 600 !important;
+    color: black;
+    font-size: 50px;
+}
+.selectbox{
+    margin-bottom: 2rem;
+}
+
+.selectbox select{
+    background: transparent;
+    width: 20%;
+    padding: 16px 30px 16px 125px;
+    border-radius: 50px;
+    font: 400 22px;
+    font-size: 24px;
+    border: 1px solid #931dff;
+    color: #931dff;
+    -webkit-appearance: none;
+
+}
+.selectbox select::-ms-expand{
+    display: none;
+}
+.selectbox option{
+    position: relative;
+    float: right;
+    left: 20rem;
+}
+
+.selectbox select:focus{
+    outline: none;
+    box-shadow: 0 0 10px -1px #931dff ;
+}
+
+.selectbox .label{
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    font: 600 12px arial;
+    font-size: 14px;
+    color: #750dd4;
+    top: 23.3rem ;
+    left: 39rem;
+}
+.selectbox .label2{
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    font: 600 12px arial;
+    font-size: 14px;
+    color: #750dd4;
+    top: 29rem ;
+    left: 40rem;
+}
+
+.selectbox i{
+    color: #616161;
+    font-size: 18px;
+    position: absolute;
+    z-index: -10;
+    top: 23.2rem;
+    right: 42rem;
+}
+.city i{
+    color: #616161;
+    font-size: 18px;
+    position: absolute;
+    top: 29rem;
+    right: 40.5rem;
+}
+
+.selectbox select:focus +i{
+    color: #931dff;
+}
+
+.post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post button{
+    border-radius: 0;
+   width: 30%;
+   height: 3.4rem;
+   background-color: #e76000;
+   outline: none;
+   border: none;
+   color: white;
+   cursor: pointer;
+   font-size: 18px;
+}
+.post button:hover{
+   background-color: white;
+   outline: none;
+   border: 2px solid #e76000;
+   color: black;
+   cursor: pointer;
+   font-size: 18px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Property</title>
+    <link rel="stylesheet" href="../Style/housing.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Style/listProperty.css">
+    <script defer src="./switch.js"></script>
+</head>
+<body>
+    <!-- *****************NAVBAR******************* -->
+  <header id="header">
+    <a href="index.html" class="logo">logo</a>
+    <ul>
+        <li><a href="#home" onclick="toggle()">Home</a></li>
+        <li><a href="#services" onclick="toggle()">Services</a></li>
+        <li><a href="#portfolio" onclick="toggle()">List A Property</a></li>
+        <li><a href="#team" onclick="toggle()">Rent</a></li>
+        <li><a href="#contact" onclick="toggle()">Contact</a></li>
+        <li><a href="#" id="button" onclick="toggle()">Login/SignUp</a></li>
+    </ul>
+    <div class="toggle" onclick="toggle()"></div>
+</header>
+<script type="text/javascript">
+    function toggle(){
+        var header=document.getElementById("header")
+        header.classList.toggle('active')
+    }
+</script>
+
+
+
+
+
+<div class="head1">
+    <h1>START LISTING</h1>
+    
+</div>
+
+<div class="tabContainer">
+    <div class="buttonContainer">
+        <button onclick="showPanel(0,'#f44336')">RESIDENTIAL</button>
+        <button onclick="showPanel(1,'#4caf50')">COMMERCIAL</button>
+    </div>
+    <div class="tabPanel">
+        <div class="selectbox">
+            <span class="label">Property Type:</span>
+        <select name="property" id="">
+            <option value="Flat">Flat</option>
+            <option value="Pg/Hostel">Pg/Hostel</option>
+            
+        </select>
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </div>
+        <div class="selectbox city">
+            <span class="label2">Select City:</span>
+        <select name="property" id="">
+            <option value="Mohali">Mohali</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Indore">Indore</option>
+            
+        </select>
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </div>
+    </div>
+    <div class="tabPanel">COMING SOON...</div>
+    <div class="post"><button class="post" onclick="location.href='./propertyform.html'" >Start posting for free</button></div>
+    
+    
+</div>
+
+
+</body>
+</html>
