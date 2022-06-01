@@ -44,6 +44,7 @@
 
     <div >
         <form class="listform" action="#" method="get">
+            <label for="">Property Type*:</label>
             <select name="type" id="" >
                 <option value="" disabled="disabled " selected>Select Property Type</option>
                 <option value="">1RK</option>
@@ -51,9 +52,12 @@
                 <option value="">2BHK</option>
                 <option value="">3BHK</option>
             </select>
+            <label for="">Property Name* :</label>
             <input type="text" placeholder="Property Name">
+            <label for="">Floor Number* :</label>
             <select name="floor" id="">
                 <option value="1" disabled="disabled" selected>Select Floor</option>
+                <option value="1">Ground</option>
                 <option value="1">1</option>
                 <option value="1">2</option>
                 <option value="1">3</option>
@@ -62,7 +66,9 @@
                 <option value="1">6</option>
                 <option value="1">7</option>
             </select>
+            <label for="">Property Age* :</label>
             <input type="number" placeholder="Property Age">
+            <label for="">City* :</label>
             <select name="city" id="">
                 <option value="" disabled="disabled" selected>Select City</option>
                 <option value="">Mohali</option>
@@ -91,12 +97,13 @@
                 <Option>Female</Option>
                 <Option>Does't Matter</Option>
             </select>
-            <label for="Furnishing*"></label>
+            <label for="Furnishing*">Furnishing* :</label>
             <select name="furnished" id="furnished">
                 <option value="Furnishing" disabled="disabled" selected>Furnishing</option>
                 <option value="Furnishing">Furnished</option>
                 <option value="Furnishing">Semi-Furnished</option>
             </select>
+            <label for="">Property Description(Optional)</label>
             <textarea name="description" id="" cols="50" rows="10" placeholder="Description"></textarea>
             <button type="submit">Submit</button>
 
