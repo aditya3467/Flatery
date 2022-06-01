@@ -145,7 +145,8 @@ header ul li a:hover{
 
 .heading{
     position: relative;
-    height: 10rem;
+    height: 8rem;
+    margin-bottom: 3rem;
     top: 5rem;
     display: flex;
     justify-content: center;
