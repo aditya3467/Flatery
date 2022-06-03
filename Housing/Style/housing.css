@@ -255,6 +255,7 @@ header ul li a:hover{
   display: none;
 }
 
+
 .close{
   cursor: pointer;
   /* height: 5rem; */
@@ -368,7 +369,21 @@ input {
 	max-width: 100%;
 	min-height: 580px;
 }
-
+@media(max-width:600px)
+{
+  .container {
+    top: 5rem;
+    width: 558px;
+    min-height: 500px;
+  }
+}
+@media(max-width:450px)
+{
+  .container {
+    width: 358px;
+    min-height: 400px;
+  }
+}
 .form-container {
 	position: absolute;
 	top: 0;
